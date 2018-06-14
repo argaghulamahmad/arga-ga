@@ -32,7 +32,7 @@
       axios.get(`/data/achievements.json`)
         .then(response => {
           const data = response.data;
-          console.log(data);
+          // console.log(data);
           const achievements = [];
           for (let key in data) {
             const item = data[key];

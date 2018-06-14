@@ -116,7 +116,7 @@
         })
           .then(function (response) {
             _this.showModal();
-            console.log(response);
+            // console.log(response);
           })
           .catch(function (error) {
             console.log(error);

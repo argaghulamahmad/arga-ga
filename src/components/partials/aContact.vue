@@ -34,7 +34,7 @@
       axios.get(`/data/contact-me/contact.json`)
         .then(response => {
           const data = response.data;
-          console.log(data);
+          // console.log(data);
           const contacts = [];
           for (let key in data) {
             const item = data[key];

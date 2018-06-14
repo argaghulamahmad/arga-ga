@@ -43,7 +43,7 @@
             projects.push(project)
           }
           this.projects = projects;
-          console.log(this.projects);
+          // console.log(this.projects);
           this.loading = false;
         })
         .catch(e => {
