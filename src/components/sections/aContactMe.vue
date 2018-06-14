@@ -37,6 +37,10 @@
     name: "aContactMe",
     components: {
       aCalendly, aSendMessage, aContact
+    },
+    props: {
+      userName: '',
+      userEmail: ''
     }
   }
 </script>

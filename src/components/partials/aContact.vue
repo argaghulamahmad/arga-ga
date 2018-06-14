@@ -1,13 +1,57 @@
 <template>
-  <div></div>
+  <div class="contactContainer">
+    <h2 class="mb-5">Contact</h2>
+    <b-list-group>
+      <b-list-group-item v-for="(contact, index) in contacts" :key="index">
+        <i :class="iconClass(contact.icon)"></i>
+        {{contact.content}}
+      </b-list-group-item>
+    </b-list-group>
+  </div>
 </template>
 
 <script>
+  import axios from 'axios'
+  import bListGroup from 'bootstrap-vue/es/components/list-group/list-group'
+  import bListGroupItem from 'bootstrap-vue/es/components/list-group/list-group-item'
+
   export default {
-    name: "aContact"
+    name: "aContact",
+    components: {
+      bListGroup, bListGroupItem
+    },
+    methods: {
+      iconClass(icon) {
+        return "fa fa-" + icon;
+      }
+    },
+    data() {
+      return {
+        contacts: []
+      }
+    },
+    created() {
+      axios.get(`/data/contact-me/contact.json`)
+        .then(response => {
+          const data = response.data;
+          console.log(data);
+          const contacts = [];
+          for (let key in data) {
+            const item = data[key];
+            item.id = key;
+            contacts.push(item)
+          }
+          this.contacts = contacts;
+        })
+        .catch(e => {
+          console.log(e);
+        });
+    }
   }
 </script>
 
 <style scoped>
-
+  .contactContainer {
+    padding: 50px;
+  }
 </style>

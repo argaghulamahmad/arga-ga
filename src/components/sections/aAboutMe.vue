@@ -1,7 +1,6 @@
 <template>
   <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
     <div class="my-auto">
-      <p></p>
       <h1 class="mb-0">Hi, Everyone! My name is
         <br>
         <span class="text-primary">{{this.firstName}} {{this.lastName}}</span>
@@ -18,11 +17,13 @@
         </li>
       </ul>
     </div>
+    <aSpinner v-if="loading"></aSpinner>
   </section>
 </template>
 
 <script>
   import axios from 'axios';
+  import aSpinner from '../partials/aSpinner'
 
   export default {
     name: "aAboutMe",
@@ -32,8 +33,12 @@
         lastName: '',
         email: '',
         description: '',
-        socials: []
+        socials: [],
+        loading: true
       }
+    },
+    components: {
+      aSpinner
     },
     methods: {
       getSocialIconClass: function (socialName) {
@@ -64,7 +69,8 @@
             socials.push(social)
           }
           this.socials = socials;
-          console.log(this.socials);
+          this.loading = false;
+          // console.log(this.socials);
         })
         .catch(e => {
           console.log(e);
@@ -76,9 +82,5 @@
 <style scoped>
   .list-social-icons a .fa-lg {
     font-size: 1.75rem
-  }
-
-  .list-icons {
-    font-size: 3rem
   }
 </style>

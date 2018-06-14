@@ -2,17 +2,19 @@
   <div id="app">
     <a-nav></a-nav>
     <resume-container></resume-container>
+    <aFooter></aFooter>
   </div>
 </template>
 
 <script>
   import aNav from './components/partials/aNav'
+  import aFooter from './components/partials/aFooter'
   import resumeContainer from './components/resumeContainer'
 
   export default {
     name: 'app',
     components: {
-      aNav, resumeContainer
+      aNav, resumeContainer, aFooter
     }
   }
 </script>
@@ -60,6 +62,14 @@
 
   .list-social-icons a:hover {
     color: #bd5d38
+  }
+
+  .list-social-icons a .fa-lg {
+    font-size: 1.75rem
+  }
+
+  .list-icons {
+    font-size: 3rem
   }
 
   .list-icons .list-inline-item i:hover {

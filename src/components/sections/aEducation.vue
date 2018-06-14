@@ -15,18 +15,24 @@
         </div>
       </div>
     </div>
+    <aSpinner v-if="loading"></aSpinner>
   </section>
 </template>
 
 <script>
   import axios from 'axios';
+  import aSpinner from '../partials/aSpinner'
 
   export default {
     name: "aEducation",
     data() {
       return {
-        educations: []
+        educations: [],
+        loading: true
       }
+    },
+    components: {
+      aSpinner
     },
     created() {
       axios.get(`/data/education.json`)
@@ -39,6 +45,7 @@
             educations.push(education)
           }
           this.educations = educations.reverse();
+          this.loading = false;
         })
         .catch(e => {
           console.log(e);
