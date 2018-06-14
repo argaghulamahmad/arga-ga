@@ -6,18 +6,24 @@
         <li v-for="interest in interests">{{interest['title']}}</li>
       </ul>
     </div>
+    <aSpinner v-if="loading"></aSpinner>
   </section>
 </template>
 
 <script>
   import axios from 'axios';
+  import aSpinner from '../partials/aSpinner'
 
   export default {
     name: "aInterests",
     data() {
       return {
-        interests: []
+        interests: [],
+        loading: true
       }
+    },
+    components: {
+      aSpinner
     },
     created() {
       axios.get(`/data/interests.json`)
@@ -30,6 +36,7 @@
             interests.push(interest)
           }
           this.interests = interests;
+          this.loading = false;
         })
         .catch(e => {
           console.log(e);

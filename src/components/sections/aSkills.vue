@@ -2,7 +2,6 @@
   <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
     <div class="my-auto">
       <h2 class="mb-5">Skills</h2>
-
       <div class="subheading mb-3">Programming Languages &amp; Tools</div>
       <div>
         <ul class="list-inline list-icons">
@@ -11,7 +10,6 @@
           </li>
         </ul>
       </div>
-
       <div class="subheading mb-3">Workflow</div>
       <ul class="fa-ul mb-0">
         <li v-for="item in workflows">
@@ -20,19 +18,25 @@
         </li>
       </ul>
     </div>
+    <aSpinner v-if="loading"></aSpinner>
   </section>
 </template>
 
 <script>
   import axios from 'axios';
+  import aSpinner from '../partials/aSpinner'
 
   export default {
     name: "aSkills",
     data() {
       return {
         programmingLanguagesTools: [],
-        workflows: []
+        workflows: [],
+        loading: true
       }
+    },
+    components: {
+      aSpinner
     },
     created() {
       axios.get(`/data/skills/programming-languages-tools.json`)
@@ -60,6 +64,7 @@
             workflows.push(item)
           }
           this.workflows = workflows;
+          this.loading = false;
         })
         .catch(e => {
           console.log(e);

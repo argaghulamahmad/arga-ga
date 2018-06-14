@@ -48,7 +48,6 @@
         </li>
       </ul>
     </div>
-    <p class="nav__footer">Arga Ghulam Ahmad © 2018</p>
   </nav>
 </template>
 
@@ -68,7 +67,7 @@
     color: rgba(255, 255, 255, .5)
   }
 
-  .nav__footer {
-    color: rgba(255, 255, 255, .5)
+  span {
+    color: white;
   }
 </style>

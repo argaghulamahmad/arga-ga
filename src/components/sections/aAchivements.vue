@@ -9,24 +9,30 @@
         </li>
       </ul>
     </div>
+    <aSpinner v-if="loading"></aSpinner>
   </section>
 </template>
 
 <script>
   import axios from 'axios'
+  import aSpinner from '../partials/aSpinner'
 
   export default {
     name: "aAwards",
     data() {
       return {
-        achievements: []
+        achievements: [],
+        loading: true
       }
+    },
+    components: {
+      aSpinner
     },
     created() {
       axios.get(`/data/achievements.json`)
         .then(response => {
           const data = response.data;
-          console.log(data);
+          // console.log(data);
           const achievements = [];
           for (let key in data) {
             const item = data[key];
@@ -34,6 +40,7 @@
             achievements.push(item)
           }
           this.achievements = achievements;
+          this.loading = false;
         })
         .catch(e => {
           console.log(e);

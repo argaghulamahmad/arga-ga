@@ -4,9 +4,8 @@ import aEducation from './components/sections/aEducation';
 import aExperience from './components/sections/aExperience';
 import aInterests from './components/sections/aInterests';
 import aSkills from './components/sections/aSkills';
-import aContactMe from './components/sections/aContactMe'
 import aProjects from './components/sections/aProjects'
-import aCalendly from './components/partials/aCalendly'
+import aAuth from './components/partials/aAuth'
 
 export const routes = [
   {
@@ -24,11 +23,6 @@ export const routes = [
   }, {
     path: '/skills', component: aSkills
   }, {
-    path: '/contact-me', component: aContactMe, children: [
-      {
-        path: '/calendly', component: aCalendly
-      }
-    ]
-
+    path: '/contact-me', component: aAuth
   }
 ];

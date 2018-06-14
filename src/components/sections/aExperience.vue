@@ -2,7 +2,6 @@
   <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
     <div class="my-auto">
       <h2 class="mb-5">Experience</h2>
-
       <div v-for="experience in experiences" class="resume-item d-flex flex-column flex-md-row mb-5">
         <div class="resume-content mr-auto">
           <h3 class="mb-0">{{experience['title']}}</h3>
@@ -16,22 +15,26 @@
           <span class="text-primary">{{experience['from']}} - {{experience['to']}}</span>
         </div>
       </div>
-
     </div>
-
+    <aSpinner v-if="loading"></aSpinner>
   </section>
 
 </template>
 
 <script>
   import axios from 'axios';
+  import aSpinner from '../partials/aSpinner'
 
   export default {
     name: "aExperience",
     data() {
       return {
-        experiences: []
+        experiences: [],
+        loading: true
       }
+    },
+    components: {
+      aSpinner
     },
     created() {
       axios.get(`/data/experience.json`)
@@ -44,6 +47,7 @@
             experiences.push(experience)
           }
           this.experiences = experiences.reverse();
+          this.loading = false;
         })
         .catch(e => {
           console.log(e);
