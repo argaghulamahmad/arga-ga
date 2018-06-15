@@ -1,19 +1,21 @@
 <template>
   <div>
-    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-      <li class="nav-item">
-        <a class="nav-link active" id="pills-calendly-tab" data-toggle="pill" href="#pills-calendly" role="tab"
-           aria-controls="pills-calendly" aria-selected="true">Calendly</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id="pills-message-tab" data-toggle="pill" href="#pills-message" role="tab"
-           aria-controls="pills-message" aria-selected="false">Leave a message</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab"
-           aria-controls="pills-contact" aria-selected="false">Contact</a>
-      </li>
-    </ul>
+    <div class="div--list">
+      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="pills-calendly-tab" data-toggle="pill" href="#pills-calendly" role="tab"
+             aria-controls="pills-calendly" aria-selected="true">Calendly</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="pills-message-tab" data-toggle="pill" href="#pills-message" role="tab"
+             aria-controls="pills-message" aria-selected="false">Leave a message</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab"
+             aria-controls="pills-contact" aria-selected="false">Contact</a>
+        </li>
+      </ul>
+    </div>
     <div class="tab-content" id="pills-tabContent">
       <div class="tab-pane fade show active" id="pills-calendly" role="tabpanel" aria-labelledby="pills-calendly-tab">
         <aCalendly></aCalendly>
@@ -56,5 +58,9 @@
 
   ul {
     padding-top: 20px;
+  }
+
+  .div--list {
+    padding: 0 20px 0 20px;
   }
 </style>
