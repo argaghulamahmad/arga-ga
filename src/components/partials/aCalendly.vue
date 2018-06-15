@@ -3,9 +3,10 @@
     <b-embed type="iframe"
              src="https://calendly.com/argaghulamahmad"
              style="min-width:320px;height:600px;"
-             aspect="1by1"
+             aspect="16by9"
+             tag="div"
+             allowfullscreen
     ></b-embed>
-    <br>
   </div>
 </template>
 
