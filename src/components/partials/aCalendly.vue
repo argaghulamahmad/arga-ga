@@ -1,15 +1,22 @@
 <template>
   <div>
-    <!-- Calendly inline widget begin -->
-    <div class="calendly-inline-widget" data-url="https://calendly.com/argaghulamahmad"
-         style="min-width:320px;height:580px;"></div>
-    <!-- Calendly inline widget end -->
+    <b-embed type="iframe"
+             src="https://calendly.com/argaghulamahmad"
+             style="min-width:320px;height:600px;"
+             aspect="1by1"
+    ></b-embed>
+    <br>
   </div>
 </template>
 
 <script>
+  import bEmbed from 'bootstrap-vue/es/components/embed/embed'
+
   export default {
-    name: "aCalendly"
+    name: "aCalendly",
+    components: {
+      bEmbed
+    }
   }
 </script>
 

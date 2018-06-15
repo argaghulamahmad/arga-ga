@@ -126,6 +126,6 @@
   .p--title {
     text-align: center;
     font-weight: bolder;
-    padding: 10px 0 0px 0;
+    padding: 0 20px 0 20px;
   }
 </style>

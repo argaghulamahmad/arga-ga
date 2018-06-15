@@ -46,6 +46,7 @@
       <span style="padding: 0 4px 0 4px"></span>
       <b-button type="reset" variant="danger">Reset</b-button>
     </b-form>
+    <br>
     <!--Message has been sent Modal-->
     <b-modal ref="successModal" :ok-only="true" id="modal-center" centered title="Message has been sent!">
       <p class="my-4">Your message has been stored in the database!</p>
@@ -132,6 +133,6 @@
 
 <style scoped>
   .sendMessageContainer {
-    padding: 50px;
+    padding: 50px 30px 50px 30px;
   }
 </style>
