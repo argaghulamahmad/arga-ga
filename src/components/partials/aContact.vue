@@ -1,5 +1,5 @@
 <template>
-  <div class="contactContainer">
+  <div class="contactContainer p-3 p-lg-5 d-flex flex-column my-auto">
     <h2 class="mb-5">Contact</h2>
     <b-list-group>
       <b-list-group-item v-for="(contact, index) in contacts" :key="index">

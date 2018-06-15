@@ -1,5 +1,5 @@
 <template>
-  <div class="sendMessageContainer">
+  <div class="sendMessageContainer p-3 p-lg-5 d-flex flex-column my-auto">
     <h2 class="mb-5">Leave a message</h2>
     <b-form @submit="onSubmit" @reset="onReset" v-if="show">
       <b-form-group id="formInputGroup1"
