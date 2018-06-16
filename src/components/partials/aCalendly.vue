@@ -2,7 +2,7 @@
   <div class="p-3 p-lg-5 d-flex flex-column my-auto">
     <b-embed type="iframe"
              src="https://calendly.com/argaghulamahmad"
-             style="min-width:320px;height:100%;"
+             style="width:100%;height:100%;"
              aspect="16by9"
              tag="div"
              allowfullscreen
