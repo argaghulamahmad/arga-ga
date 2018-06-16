@@ -98,10 +98,10 @@
     },
     methods: {
       signInWithGoogle: function () {
-        const provider = new firebase.auth.GoogleAuthProvider()
+        const provider = new firebase.auth.GoogleAuthProvider();
         firebase.auth().signInWithRedirect(provider).then((result) => {
           this.user = result.user;
-        }).catch(err => console.log(error))
+        }).catch(error => console.log(error))
       },
       signOut: function () {
         firebase.auth().signOut().then(() => {
@@ -110,7 +110,7 @@
           this.$store.state.userName = '';
           this.$store.state.userEmail = '';
           this.$store.state.userPhotoUrl = '';
-        }).catch(err => console.log(error))
+        }).catch(error => console.log(error))
       }
     }
   }
