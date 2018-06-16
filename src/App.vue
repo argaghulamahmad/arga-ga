@@ -1,7 +1,9 @@
 <template>
   <div id="app">
-    <a-nav></a-nav>
-    <resume-container></resume-container>
+    <main role="main" class="container">
+      <a-nav></a-nav>
+      <resume-container></resume-container>
+    </main>
     <aFooter></aFooter>
   </div>
 </template>
@@ -23,7 +25,8 @@
   body {
     font-family: 'Open Sans', serif;
     padding-top: 54px;
-    color: #868e96
+    color: #868e96;
+    margin-bottom: 60px; /* Margin bottom by footer height */
   }
 
   @media (min-width: 992px) {
