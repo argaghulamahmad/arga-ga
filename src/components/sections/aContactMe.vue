@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="weight">
     <div class="div--list">
       <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
         <li class="nav-item">
@@ -62,5 +62,9 @@
 
   .div--list {
     padding: 0 20px 0 20px;
+  }
+
+  .weight {
+    font-weight: 600;
   }
 </style>

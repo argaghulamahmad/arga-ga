@@ -2,7 +2,7 @@
   <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
     <div class="my-auto">
       <h2 class="mb-5">Interests</h2>
-      <ul>
+      <ul class="weight">
         <li v-for="interest in interests">{{interest['title']}}</li>
       </ul>
     </div>
@@ -46,5 +46,7 @@
 </script>
 
 <style scoped>
-
+  .weight {
+    font-weight: 600;
+  }
 </style>

@@ -2,21 +2,23 @@
   <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
     <div class="my-auto">
       <h2 class="mb-5">Skills</h2>
-      <div class="subheading mb-3">Programming Languages &amp; Tools</div>
-      <div>
-        <ul class="list-inline list-icons">
-          <li v-for="item in programmingLanguagesTools" class="list-inline-item">
-            <i :class="item['icon-class']"></i>
+      <div class="weight">
+        <div class="subheading mb-3">Programming Languages &amp; Tools</div>
+        <div>
+          <ul class="list-inline list-icons">
+            <li v-for="item in programmingLanguagesTools" class="list-inline-item">
+              <i :class="item['icon-class']"></i>
+            </li>
+          </ul>
+        </div>
+        <div class="subheading mb-3">Workflow</div>
+        <ul class="fa-ul mb-0">
+          <li v-for="item in workflows">
+            <i class="fa-li fa fa-check"></i>
+            {{item['title']}}
           </li>
         </ul>
       </div>
-      <div class="subheading mb-3">Workflow</div>
-      <ul class="fa-ul mb-0">
-        <li v-for="item in workflows">
-          <i class="fa-li fa fa-check"></i>
-          {{item['title']}}
-        </li>
-      </ul>
     </div>
     <aSpinner v-if="loading"></aSpinner>
   </section>
@@ -77,5 +79,9 @@
   .list-icons {
     font-size: 500%;
     padding: 0 10px 0 10px;
+  }
+
+  .weight {
+    font-weight: 600;
   }
 </style>

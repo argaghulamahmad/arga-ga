@@ -4,11 +4,21 @@
       <h2 class="mb-5">Projects</h2>
       <div v-for="project in projects" class="resume-item d-flex flex-column flex-md-row mb-5">
         <div class="resume-content mr-auto">
-          <h3 class="mb-0">{{project['name']}}</h3>
-          <div class="subheading mb-3"><a :href="project['url']" target="_blank">{{project['url']}}</a></div>
-          <p>{{project['description']}}</p>
+          <h3 class="mb-0 weight">{{project['name']}}</h3>
+          <div class="subheading mb-3 weight"><a :href="project['url']" target="_blank">{{project['url']}}</a></div>
+          <div class="div--stacks">
+            <div class="tag" v-for="stack in project['stacks']">
+              {{stack}}
+            </div>
+          </div>
+          <br>
+          <ul>
+            <li v-for="desc in project['description']" class="weight">
+              {{desc}}
+            </li>
+          </ul>
         </div>
-        <div class="resume-date text-md-right">
+        <div class="resume-date text-md-right weight">
           <span class="text-primary">{{project['from']}} - {{project['to']}}</span>
         </div>
       </div>
@@ -54,5 +64,32 @@
 </script>
 
 <style scoped>
+  .div--stacks {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 0 0 0 30px;
+  }
 
+  .div--stacks .tag {
+    color: #1976D2;
+    padding: 0.25rem;
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+    border-radius: .25rem;
+    border: 2px solid #1976D2;
+    text-align: center;
+    font-size: smaller;
+    font-style: oblique;
+    font-weight: 700;
+  }
+
+  .weight {
+    font-weight: 600;
+  }
 </style>

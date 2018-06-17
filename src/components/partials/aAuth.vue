@@ -128,4 +128,8 @@
     font-weight: bolder;
     padding: 0 20px 0 20px;
   }
+
+  .weight {
+    font-weight: 600;
+  }
 </style>

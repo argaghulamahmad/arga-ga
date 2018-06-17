@@ -2,7 +2,7 @@
   <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
     <div class="my-auto">
       <h2 class="mb-5">Achievements</h2>
-      <ul class="fa-ul mb-0">
+      <ul class="fa-ul mb-0 weight">
         <li v-for="achievement in achievements">
           <i class="fa-li fa fa-trophy text-warning"></i>
           {{achievement['title']}}
@@ -50,5 +50,7 @@
 </script>
 
 <style scoped>
-
+  .weight {
+    font-weight: 600;
+  }
 </style>
