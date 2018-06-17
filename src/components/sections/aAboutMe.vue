@@ -1,6 +1,6 @@
 <template>
   <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
-    <div class="my-auto weight">
+    <div class="my-auto weight center">
       <h1 class="mb-0">Hi, Everyone! My name is
         <br>
         <span class="text-primary">{{this.firstName}} {{this.lastName}}</span>
@@ -9,8 +9,7 @@
       <ul class="list-inline list-social-icons mb-0">
         <li class="list-inline-item" v-for="social in socials">
           <a :href="social['url']" target="_blank">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
+                <span>
                   <i :class="getSocialIconClass(social['name'])"></i>
                 </span>
           </a>
@@ -42,7 +41,7 @@
     },
     methods: {
       getSocialIconClass: function (socialName) {
-        return "fa fa-" + socialName + " fa-stack-1x fa-inverse";
+        return "fa fa-" + socialName;
       }
     },
     created: function () {
@@ -80,8 +79,16 @@
 </script>
 
 <style scoped>
-  .list-social-icons a .fa-lg {
-    font-size: 1.75rem
+  .center {
+    text-align: center;
+  }
+
+  .list-social-icons a {
+    font-size: 1.75rem;
+  }
+
+  .list-social-icons li {
+    padding-right: 1.5rem;
   }
 
   .weight {
