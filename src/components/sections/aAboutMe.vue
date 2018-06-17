@@ -1,6 +1,6 @@
 <template>
   <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
-    <div class="my-auto">
+    <div class="my-auto weight">
       <h1 class="mb-0">Hi, Everyone! My name is
         <br>
         <span class="text-primary">{{this.firstName}} {{this.lastName}}</span>
@@ -82,5 +82,9 @@
 <style scoped>
   .list-social-icons a .fa-lg {
     font-size: 1.75rem
+  }
+
+  .weight {
+    font-weight: 600;
   }
 </style>
