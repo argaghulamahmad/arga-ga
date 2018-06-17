@@ -25,5 +25,7 @@
     line-height: 60px; /* Vertically center the text there */
     background-color: #f5f5f5;
     z-index: 10000;
+    font-size: smaller;
+    font-weight: 600;
   }
 </style>
