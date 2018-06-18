@@ -4,6 +4,10 @@
       <h2 class="mb-5">Education</h2>
       <div v-for="education in educations">
         <div class="resume-item d-flex flex-column flex-md-row mb-5">
+          <div>
+            <div class="image"><img :src="education['school-logo']"
+                                    :alt="education['school']"></div>
+          </div>
           <div class="resume-content mr-auto">
             <h3 class="mb-0 weight"><a :href="education['school-url']" target="_blank">{{education['school']}}</a></h3>
             <div class="subheading mb-3 weight">{{education['degree']}}</div>
@@ -98,5 +102,23 @@
 
   .weight {
     font-weight: 600;
+  }
+
+  .image {
+    position: relative;
+    padding-top: 0.5rem;
+    padding-right: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .image img {
+    width: 3rem;
+    height: 3rem;
+    object-fit: contain;
+    border-radius: 9999px;
+    position: relative;
+    z-index: 1;
+    display: block;
+    margin: auto;
   }
 </style>

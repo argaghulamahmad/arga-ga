@@ -4,6 +4,10 @@
       <h2 class="mb-5">Experience</h2>
       <div v-for="experience in experiences">
         <div class="resume-item d-flex flex-column flex-md-row mb-5">
+          <div>
+            <div class="image"><img :src="experience['company-logo']"
+                                    :alt="experience['company']"></div>
+          </div>
           <div class="resume-content mr-auto">
             <h3 class="mb-0 weight">{{experience['title']}}</h3>
             <div class="subheading mb-3 weight">
@@ -103,5 +107,23 @@
 
   .weight {
     font-weight: 600;
+  }
+
+  .image {
+    position: relative;
+    padding-top: 0.5rem;
+    padding-right: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .image img {
+    width: 3rem;
+    height: 3rem;
+    object-fit: contain;
+    border-radius: 9999px;
+    position: relative;
+    z-index: 1;
+    display: block;
+    margin: auto;
   }
 </style>
