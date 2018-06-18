@@ -1,8 +1,8 @@
 <template>
   <div>
     <div class="weight">
-      <div class="div--list">
-        <b-tabs nav-class="mx-auto">
+      <bCard no-body>
+        <b-tabs nav-class="mx-auto" card>
           <b-tab title="Calendly" active>
             <br>
             <aCalendly></aCalendly>
@@ -16,7 +16,7 @@
             <aContact></aContact>
           </b-tab>
         </b-tabs>
-      </div>
+      </bCard>
       <br>
     </div>
   </div>
@@ -28,11 +28,12 @@
   import aContact from '../partials/aContact'
   import bTab from 'bootstrap-vue/es/components/tabs/tab'
   import bTabs from 'bootstrap-vue/es/components/tabs/tabs'
+  import bCard from 'bootstrap-vue/es/components/card/card'
 
   export default {
     name: "aContactMe",
     components: {
-      aCalendly, aSendMessage, aContact, bTab, bTabs
+      aCalendly, aSendMessage, aContact, bTab, bTabs, bCard
     },
     props: {
       userName: '',
