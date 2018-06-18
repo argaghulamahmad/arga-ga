@@ -1,17 +1,17 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-    <a class="navbar-brand js-scroll-trigger">
+  <bNavbar class="navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+    <bNavbarBrand>
       <span class="d-block d-lg-none">Arga Ghulam Ahmad</span>
       <span class="d-none d-lg-block">
           <img class="img-fluid img-profile rounded-circle mx-auto mb-2"
                src="https://avatars3.githubusercontent.com/u/19942092?s=460&v=4" alt="">
         </span>
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    </bNavbarBrand>
+    <bNavbarToggler type="button" data-toggle="collapse" target="navbarSupportedContent" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    </bNavbarToggler>
+    <bNavbarCollapse class="navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav">
         <li class="nav-item">
           <router-link class="nav-link js-scroll-trigger" to="/" tag="li" active-class="active" exact><a>Home</a>
@@ -47,17 +47,26 @@
           </router-link>
         </li>
       </ul>
-    </div>
-  </nav>
+    </bNavbarCollapse>
+  </bNavbar>
 </template>
 
 <script>
+  import bNavbar from 'bootstrap-vue/es/components/navbar/navbar'
+  import bNavbarCollapse from 'bootstrap-vue/es/components/collapse/collapse'
+  import bNavbarToggler from 'bootstrap-vue/es/components/navbar/navbar-toggle'
+  import bNavbarBrand from 'bootstrap-vue/es/components/navbar/navbar-brand'
+
+
   export default {
     name: "aNav",
     props: {
       photoUrl: String,
       name: String,
       photoHrefUrl: String,
+    },
+    components: {
+      bNavbar, bNavbarCollapse, bNavbarToggler, bNavbarBrand
     }
   }
 </script>

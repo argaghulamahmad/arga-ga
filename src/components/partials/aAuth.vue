@@ -17,7 +17,8 @@
           Contact Me
         </template>
         <template slot="lead">
-          Let me know you, please login using your google account. To see my personal details such as phone number and email, i need to know who you are.
+          Let me know you, please login using your google account. To see my personal details such as phone number and
+          email, i need to know who you are.
         </template>
         <hr class="my-4">
         <b-button size="sm" class="mx-auto my-2 my-sm-0" variant="primary" type="submit"
@@ -37,20 +38,10 @@
 </template>
 
 <script>
-  import bContainer from 'bootstrap-vue/es/components/layout/container'
-  import bRow from 'bootstrap-vue/es/components/layout/row'
-  import bCol from 'bootstrap-vue/es/components/layout/col'
   import bButton from 'bootstrap-vue/es/components/button/button'
   import bNavbar from 'bootstrap-vue/es/components/navbar/navbar'
   import bNavbarBrand from 'bootstrap-vue/es/components/navbar/navbar-brand'
-  import bNavbarToggle from 'bootstrap-vue/es/components/navbar/navbar-toggle'
-  import bCollapse from 'bootstrap-vue/es/components/collapse/collapse'
   import bNavbarNav from 'bootstrap-vue/es/components/navbar/navbar-nav'
-  import bNavItem from 'bootstrap-vue/es/components/nav/nav-item'
-  import bNavForm from 'bootstrap-vue/es/components/nav/nav-form'
-  import bNavItemDropdown from 'bootstrap-vue/es/components/nav/nav-item-dropdown'
-  import bDropdownItem from 'bootstrap-vue/es/components/dropdown/dropdown-item'
-  import bFormInput from 'bootstrap-vue/es/components/form-input/form-input'
   import bJumbotron from 'bootstrap-vue/es/components/jumbotron/jumbotron'
   import aContactMe from '../sections/aContactMe'
   import aSpinner from '../partials/aSpinner'
@@ -60,22 +51,12 @@
     name: "aAuth",
     components: {
       aContactMe,
-      bContainer,
-      bRow,
-      bCol,
-      bButton,
+      aSpinner,
       bNavbar,
       bNavbarBrand,
-      bNavbarToggle,
-      bCollapse,
       bNavbarNav,
-      bNavItem,
-      bNavForm,
-      bFormInput,
-      bNavItemDropdown,
-      bDropdownItem,
-      bJumbotron,
-      aSpinner
+      bButton,
+      bJumbotron
     },
     beforeCreate: function () {
       firebase.auth().onAuthStateChanged((user) => {
