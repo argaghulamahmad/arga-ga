@@ -21,7 +21,7 @@
   }
 </script>
 
-<style>
+<style lang="scss">
   body {
     font-family: 'Open Sans', serif;
     padding-top: 54px;

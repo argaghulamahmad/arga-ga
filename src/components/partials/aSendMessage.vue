@@ -49,7 +49,7 @@
     <br>
     <!--Message has been sent Modal-->
     <b-modal ref="successModal" :ok-only="true" id="modal-center" centered title="Message has been sent!">
-      <p class="my-4">Your message has been stored in the database!</p>
+      <p class="my-4">Your message has been sent!</p>
     </b-modal>
   </div>
 </template>
