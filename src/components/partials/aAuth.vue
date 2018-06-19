@@ -17,8 +17,8 @@
           Contact Me
         </template>
         <template slot="lead">
-          Let me know you, please login using your google account. To see my personal details such as phone number and
-          email, i need to know who you are.
+          Let me know you, please log in using your google account. To see my personal details such as phone number and
+          email, I need to know who you are.
         </template>
         <hr class="my-4">
         <b-button size="sm" class="mx-auto my-2 my-sm-0" variant="primary" type="submit"

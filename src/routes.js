@@ -1,5 +1,5 @@
 import aAboutMe from './components/sections/aAboutMe';
-import aAwards from './components/sections/aAchivements';
+import aAwards from './components/sections/aAchievements';
 import aEducation from './components/sections/aEducation';
 import aExperience from './components/sections/aExperience';
 import aInterests from './components/sections/aInterests';
