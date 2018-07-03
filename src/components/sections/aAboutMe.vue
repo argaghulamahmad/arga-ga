@@ -44,7 +44,7 @@
         return "fa fa-" + socialName;
       }
     },
-    created: function () {
+    beforeCreate: function () {
       axios.get(`/data/about-me.json`)
         .then(response => {
           // console.log(response.data);

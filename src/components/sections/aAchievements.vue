@@ -28,7 +28,7 @@
     components: {
       aSpinner
     },
-    created() {
+    beforeCreate() {
       axios.get(`/data/achievements.json`)
         .then(response => {
           const data = response.data;

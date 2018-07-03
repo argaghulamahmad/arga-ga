@@ -42,7 +42,7 @@
     components: {
       aSpinner
     },
-    created() {
+    beforeCreate() {
       axios.get(`/data/projects.json`)
         .then(response => {
           const data = response.data;

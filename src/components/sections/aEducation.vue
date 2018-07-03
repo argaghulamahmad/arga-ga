@@ -54,7 +54,7 @@
     components: {
       aSpinner
     },
-    created() {
+    beforeCreate() {
       axios.get(`/data/education.json`)
         .then(response => {
           const data = response.data;

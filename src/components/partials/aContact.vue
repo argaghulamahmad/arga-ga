@@ -30,7 +30,7 @@
         contacts: []
       }
     },
-    created() {
+    beforeCreate() {
       axios.get(`/data/contact-me/contact.json`)
         .then(response => {
           const data = response.data;

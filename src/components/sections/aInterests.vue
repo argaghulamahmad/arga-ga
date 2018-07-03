@@ -25,7 +25,7 @@
     components: {
       aSpinner
     },
-    created() {
+    beforeCreate() {
       axios.get(`/data/interests.json`)
         .then(response => {
           const data = response.data;

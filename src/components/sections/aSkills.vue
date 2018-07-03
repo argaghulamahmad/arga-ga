@@ -40,7 +40,7 @@
     components: {
       aSpinner
     },
-    created() {
+    beforeCreate() {
       axios.get(`/data/skills/programming-languages-tools.json`)
         .then(response => {
           const data = response.data;
