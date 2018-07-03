@@ -29,7 +29,7 @@
     </div>
 
     <div v-if="user">
-      <p class="p--title">Hello, {{this.userName}}. It was pleasure to meet you.</p>
+      <p class="p--title">Hello, {{this.getUserName()}}. It was pleasure to meet you.</p>
       <aContactMe></aContactMe>
     </div>
 
@@ -46,6 +46,8 @@
   import aContactMe from '../sections/aContactMe'
   import aSpinner from '../partials/aSpinner'
   import firebase from 'firebase'
+  import {mapActions} from 'vuex'
+  import {mapGetters} from 'vuex'
 
   export default {
     name: "aAuth",
@@ -62,10 +64,9 @@
       firebase.auth().onAuthStateChanged((user) => {
         if (user) {
           this.user = user;
-          this.userName = user.displayName;
-          this.$store.state.userName = user.displayName;
-          this.$store.state.userEmail = user.email;
-          this.$store.state.userPhotoUrl = user.photoURL;
+          this.actionUserName(this.user.displayName);
+          this.actionUserEmail(this.user.email);
+          this.actionUserPhotoUrl(this.user.photoURL);
         }
         this.loading = false
       })
@@ -74,10 +75,11 @@
       return {
         loading: true,
         user: null,
-        userName: ''
       }
     },
     methods: {
+      ...mapActions(['actionUserName', 'actionUserEmail', 'actionUserPhotoUrl']),
+      ...mapGetters(['getUserName', 'getUserEmail', 'getUserPhotoUrl']),
       signInWithGoogle: function () {
         const provider = new firebase.auth.GoogleAuthProvider();
         firebase.auth().signInWithRedirect(provider).then((result) => {
@@ -87,10 +89,10 @@
       signOut: function () {
         firebase.auth().signOut().then(() => {
           this.user = null;
-          this.userName = '';
-          this.$store.state.userName = '';
-          this.$store.state.userEmail = '';
-          this.$store.state.userPhotoUrl = '';
+          this.actionUserName('');
+          this.actionUserEmail('');
+          this.actionUserPhotoUrl('');
+          console.log(this.getUserName(), this.getUserEmail(), this.getUserPhotoUrl())
         }).catch(error => console.log(error))
       }
     }
