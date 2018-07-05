@@ -65,6 +65,7 @@
   import bButton from 'bootstrap-vue/es/components/button/button'
   import bModal from 'bootstrap-vue/es/components/modal/modal'
   import axios from 'axios'
+  import {mapGetters} from 'vuex'
 
   export default {
     name: "aSendMessage",
@@ -89,6 +90,7 @@
       }
     },
     methods: {
+      ...mapGetters(['getUserName', 'getUserEmail', 'getUserPhotoUrl']),
       onReset(evt) {
         evt.preventDefault();
         /* Reset our form values */
@@ -125,8 +127,8 @@
       }
     },
     created() {
-      this.user.userName = this.$store.state.userName;
-      this.user.userEmail = this.$store.state.userEmail;
+      this.user.userName = this.getUserName();
+      this.user.userEmail = this.getUserEmail();
     }
   }
 </script>
