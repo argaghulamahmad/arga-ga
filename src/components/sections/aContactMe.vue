@@ -41,17 +41,3 @@
     }
   }
 </script>
-
-<style scoped>
-  .auto {
-    margin: auto;
-  }
-
-  .div--list {
-    padding: 0 20px 0 20px;
-  }
-
-  .weight {
-    font-weight: 600;
-  }
-</style>

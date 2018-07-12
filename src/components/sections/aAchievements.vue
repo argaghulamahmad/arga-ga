@@ -48,9 +48,3 @@
     }
   }
 </script>
-
-<style scoped>
-  .weight {
-    font-weight: 600;
-  }
-</style>

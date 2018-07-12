@@ -49,9 +49,3 @@
     }
   }
 </script>
-
-<style scoped>
-  .contactContainer {
-    padding: 50px;
-  }
-</style>

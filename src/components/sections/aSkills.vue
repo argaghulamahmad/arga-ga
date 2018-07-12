@@ -74,14 +74,3 @@
     }
   }
 </script>
-
-<style scoped>
-  .list-icons {
-    font-size: 500%;
-    padding: 0 10px 0 10px;
-  }
-
-  .weight {
-    font-weight: 600;
-  }
-</style>

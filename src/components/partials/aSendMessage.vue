@@ -132,9 +132,3 @@
     }
   }
 </script>
-
-<style scoped>
-  .sendMessageContainer {
-    padding: 50px 30px 50px 30px;
-  }
-</style>

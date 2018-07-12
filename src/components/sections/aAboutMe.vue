@@ -77,21 +77,3 @@
     }
   }
 </script>
-
-<style scoped>
-  .center {
-    text-align: center;
-  }
-
-  .list-social-icons a {
-    font-size: 1.75rem;
-  }
-
-  .list-social-icons li {
-    padding-right: 1.5rem;
-  }
-
-  .weight {
-    font-weight: 600;
-  }
-</style>

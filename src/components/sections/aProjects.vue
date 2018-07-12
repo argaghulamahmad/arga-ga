@@ -62,34 +62,3 @@
     }
   }
 </script>
-
-<style scoped>
-  .div--stacks {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    padding: 0 0 0 30px;
-  }
-
-  .div--stacks .tag {
-    color: #1976D2;
-    padding: 0.25rem;
-    margin-top: 0.5rem;
-    margin-right: 0.5rem;
-    border-radius: .25rem;
-    border: 2px solid #1976D2;
-    text-align: center;
-    font-size: smaller;
-    font-style: oblique;
-    font-weight: 700;
-  }
-
-  .weight {
-    font-weight: 600;
-  }
-</style>

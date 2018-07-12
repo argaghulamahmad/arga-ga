@@ -100,19 +100,3 @@
 
 
 </script>
-
-<style scoped>
-  .div--wrapper {
-    padding: 20px 20px 20px 20px;
-  }
-
-  .p--title {
-    text-align: center;
-    font-weight: bolder;
-    padding: 0 20px 0 20px;
-  }
-
-  .weight {
-    font-weight: 600;
-  }
-</style>

@@ -70,13 +70,3 @@
     }
   }
 </script>
-
-<style scoped>
-  .nav-link a {
-    color: rgba(255, 255, 255, .5)
-  }
-
-  span {
-    color: white;
-  }
-</style>
