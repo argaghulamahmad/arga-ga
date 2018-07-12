@@ -9,9 +9,6 @@
       <ul class="list-inline list-social-icons mb-0">
         <li class="list-inline-item" v-for="social in socials">
           <a :href="social['url']" target="_blank">
-                <span>
-                  <i :class="getSocialIconClass(social['name'])"></i>
-                </span>
           </a>
         </li>
       </ul>
