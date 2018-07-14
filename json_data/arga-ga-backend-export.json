@@ -1,0 +1,257 @@
+{
+  "data" : {
+    "about-me" : {
+      "description" : "A computer science student at Fasilkom, Universitas Indonesia. Who is eager to learn software development and try to develop an useful application. I am driven to be a software engineer.",
+      "email" : "argaghulamahmad@gmail.com",
+      "first-name" : "Arga Ghulam",
+      "last-name" : "Ahmad"
+    },
+    "achievements" : {
+      "-LEchHadq93Jr1CAlcmq" : {
+        "description" : "",
+        "title" : "The Best Telegram Bot for Pusilkom, Advance Programming 2017/2018 term 2 Bonus Project"
+      }
+    },
+    "contact-me" : {
+      "contact" : {
+        "-LEyMm131LQu0ihvBeTm" : {
+          "content" : "argaghulamahmad@gmail.com",
+          "icon" : "envelope"
+        },
+        "-LEyMqmh9gCHMALy30ee" : {
+          "content" : "+6287786329285",
+          "icon" : "phone"
+        }
+      }
+    },
+    "education" : {
+      "-LEaXcIL_FlQJVoQEqvd" : {
+        "activities" : [ "Teaching Assistant", "Software Engineering", "Web Application Development" ],
+        "degree" : "Bachelor of Computer Science",
+        "description" : [ "Major in Computer Science.", "Actively, work as a part-time teaching assistant on various courses.", "Coursework: Introduction to Digital System, Introduction to Computer Organization, Data Structures and Algorithm, Calculus, Linear Algebra, Statistics & Probability, Web Programming & Design, Advanced Programming, Database, Operating Systems, and Theory of Language & Automata." ],
+        "from" : "Aug 2016",
+        "location" : "Depok, Indonesia",
+        "school" : "Universitas Indonesia",
+        "school-logo" : "https://media.licdn.com/dms/image/C4D0BAQE_PrK97K5Veg/company-logo_200_200/0?e=2130105600&v=beta&t=-E_JfVkgtpNfsoDh5DNrAF1MijddhvE6KsYqDbS66OI",
+        "school-url" : "https://ui.ac.id",
+        "study" : "Computer Science",
+        "to" : "Aug 2020"
+      }
+    },
+    "experience" : {
+      "-LEZqBu99LFbQ94YhC15" : {
+        "company" : "Fakultas Ilmu Komputer, Universitas Indonesia",
+        "company-logo" : "https://media.licdn.com/dms/image/C4D0BAQE_PrK97K5Veg/company-logo_200_200/0?e=2130105600&v=beta&t=-E_JfVkgtpNfsoDh5DNrAF1MijddhvE6KsYqDbS66OI",
+        "company-url" : "https://cs.ui.ac.id",
+        "description" : [ "Help lectures to teach students at Faculty of Computer Science University of Indonesia about foundation of programming, Java programming language, object-oriented programming, functional programming, algorithm, Git version control, Gradle build tool, jUnit, and Gitlab CI.", "I also create the tutorial guidance and mark students assignment in a group of fifteen students." ],
+        "from" : "Jan 2018",
+        "location" : "Depok, Indonesia",
+        "stacks" : [ "Java", "Gradle", "Git", "jUnit", "Gitlab" ],
+        "title" : "Teaching Assistant: Foundation of Programming 2",
+        "to" : "May 2018"
+      },
+      "-LEZqnhP1FykYtjNlua5" : {
+        "company" : "Jojonomic Pte Ltd",
+        "company-logo" : "https://media.licdn.com/dms/image/C4D0BAQFu7TX3cwfLkg/company-logo_200_200/0?e=2159024400&v=beta&t=9PiaIgqthfT1hNfoR_7TeKnoJ6e8mKRo4dt8Qihn8Ng",
+        "company-url" : "https://jojonomic.com/",
+        "description" : [ "Rebuild jojonomic web-based application using Vue js." ],
+        "from" : "Jun 2018",
+        "location" : "Jakarta, Indonesia",
+        "stacks" : [ "Vue Js", "Node js", "JavaScript", "HTML", "CSS", "Sass", "Git" ],
+        "title" : "Front End Developer Internship",
+        "to" : "Aug 2018"
+      }
+    },
+    "interests" : {
+      "-LEci1I31PalY6LiOyap" : {
+        "title" : "Data Science and Analytics"
+      },
+      "-LEci2lR64snGNoEXP9h" : {
+        "title" : "Modern Web Application Development"
+      },
+      "-LEci4E81CEl3rGZOYmE" : {
+        "title" : "Mobile Application Development"
+      }
+    },
+    "projects" : {
+      "-LFAdQv7N4cjLCEckW4A" : {
+        "description" : [ "Role: Owner", "As a solo developer and designer, I fully built this app from scratch.", "A portfolio website fully built using Vue Js and designed to be responsive, maintainable and modular.", "This app has deployed to Heroku.", "Use Firebase as the backend, fetch the newest data automatically.", "Use Express js to serve dist JavaScript codes.", "Use Cloudflare to manage app's domain and improve web performance-security.", "Get a free domain from Freenom, and use it for this project.", "A side weekend project to improve my web development skills.", "Still in the development stage." ],
+        "from" : "Jun 2018",
+        "name" : "arga.ga - Arga Ghulam Ahmad's Personal Portofolio",
+        "stacks" : [ "Vue Js", "Express Js", "Java Script", "HTML", "CSS", "Firebase", "Git", "Gitlab", "Heroku", "Cloudflare", "Freenom", "Node Js" ],
+        "to" : "Present",
+        "url" : "https://arga.ga"
+      },
+      "-LFAhd1hidKoZeXHceO_" : {
+        "description" : [ "Role: Master", "We developed SION using Flask Web Microframework to complete our database group assignment. We deployed it to kawung.cs.ui.ac.id and you can access this system through http://152.118.25.3:8101 if you are on Universitas Indonesia internet network. We use PostgreSQL as our database management system, and query data using raw SQL.", "In this project, I prepare the development environment, developed authentication & register feature, and deploy the application to the server." ],
+        "from" : "Apr 2018",
+        "name" : "SION - Sistem Informasi Organisasi Nirlaba",
+        "stacks" : [ "Python", "Flask", "PostgreSql", "JavaScript", "HTML", "CSS", "jQuery", "Git", "Gitlab" ],
+        "to" : "May 2018",
+        "url" : "https://gitlab.com/KelompokE1Basdat2018/SION-FLASK"
+      },
+      "-LFAjtbkZ6M7xGxl33Zb" : {
+        "description" : [ "Role: Team Leader", "We developed 'Konekin Enterprise' web app using the Django web framework with Test Driven Development disciplines to complete our second web design and development tasks. We tested the code and deployed it to Heroku using Gitlab CI / CD.", "In this project, I developed login and company profile page feature. Both features use Linkedin API to get user's data. I also set up Django environment, set up Gitlab CI/CD, set up 'Konekin Enterprise' Gitlab repository, and set up 'Konekin Enterprise' Heroku application." ],
+        "from" : "Dec 2017",
+        "name" : "Konekin Enterprise",
+        "stacks" : [ "Python", "Django", "Java Script", "HTML", "CSS", "jQuery", "Git", "Linkedin API", "Gitlab", "Heroku" ],
+        "to" : "Dec 2017",
+        "url" : "https://gitlab.com/KelompokB10PPW2017/konekin-enterprise"
+      },
+      "-LFAkNVgbx_qMfNwCER4" : {
+        "description" : [ "Role: Team Leader", "We developed 'Konekin' web app using the Django web framework with Test Driven Development disciplines to complete our first web design and development tasks. We tested the code and deployed it to Heroku using Gitlab CI / CD.", "In this project, I develop dashboard feature. I also set up Django environment, create whole web app models, set up Gitlab CI/CD, set up 'Konekin' Gitlab repository, and set up 'Konekin' Heroku application." ],
+        "from" : "Oct 2017",
+        "name" : "Konekin",
+        "stacks" : [ "Python", "Django", "Java Script", "HTML", "CSS", "jQuery", "Git", "Gitlab", "Heroku" ],
+        "to" : "Oct 2017",
+        "url" : "https://gitlab.com/KelompokB10PPW2017/konekin"
+      }
+    },
+    "skills" : {
+      "programming-languages-tools" : {
+        "-LEb4wp_L7q1O63WpyRJ" : {
+          "icon-class" : "devicon-java-plain-wordmark colored",
+          "name" : "Java"
+        },
+        "-LEb50GMrY2fmPiR0RF1" : {
+          "icon-class" : "devicon-gradle-plain-wordmark colored",
+          "name" : "Gradle"
+        },
+        "-LEb51ludd82rqtrNgik" : {
+          "icon-class" : "devicon-python-plain-wordmark colored",
+          "name" : "Python"
+        },
+        "-LEb53M6UqRxLj_hKdlZ" : {
+          "icon-class" : "devicon-django-plain colored",
+          "name" : "Django"
+        },
+        "-LEb54pxJ_WeexYduth5" : {
+          "icon-class" : "devicon-nodejs-plain-wordmark",
+          "name" : "Node Js"
+        },
+        "-LEb56CAAVY5sW4KjGTS" : {
+          "icon-class" : "devicon-javascript-plain colored",
+          "name" : "Javascript"
+        },
+        "-LEb57H64okeNHO_oihF" : {
+          "icon-class" : "devicon-vuejs-plain colored",
+          "name" : "Vue Js"
+        },
+        "-LEb58RRbt2mIImJ6Vl2" : {
+          "icon-class" : "devicon-jquery-plain-wordmark colored",
+          "name" : "Jquery"
+        },
+        "-LEb5AWTwvIXxh93Lk5Q" : {
+          "icon-class" : "devicon-webpack-plain-wordmark colored",
+          "name" : "Webpack"
+        },
+        "-LEb5C5ztS4Guy3HK_2v" : {
+          "icon-class" : "devicon-babel-plain-wordmark colored",
+          "name" : "Babel"
+        },
+        "-LEb5Db0hvW8zHmZGg4c" : {
+          "icon-class" : "devicon-html5-plain-wordmark colored",
+          "name" : "HTML"
+        },
+        "-LEb5Eu_TT5pPrcnCzfD" : {
+          "icon-class" : "devicon-css3-plain-wordmark colored",
+          "name" : "CSS"
+        },
+        "-LEb5GJiDdU435S6a1C9" : {
+          "icon-class" : "devicon-sass-original colored",
+          "name" : "Sass"
+        },
+        "-LEb5HaT-oeKAU97l-2-" : {
+          "icon-class" : "devicon-postgresql-plain-wordmark colored",
+          "name" : "PostgreSql"
+        },
+        "-LEb5IrZZ0jyS0BIrIin" : {
+          "icon-class" : "devicon-git-plain-wordmark colored",
+          "name" : "Git"
+        },
+        "-LEb5KO89rARkbWO6pca" : {
+          "icon-class" : "devicon-sourcetree-plain-wordmark colored",
+          "name" : "Sourcetree"
+        },
+        "-LEb5Ld512lyTzpYc8Pt" : {
+          "icon-class" : "devicon-github-plain-wordmark colored",
+          "name" : "Github"
+        },
+        "-LEb5MhooGdZB3HeF-oa" : {
+          "icon-class" : "devicon-gitlab-plain-wordmark colored",
+          "name" : "Gitlab"
+        },
+        "-LEb5NsUNe9UCkhaup1h" : {
+          "icon-class" : "devicon-ubuntu-plain-wordmark colored",
+          "name" : "Ubuntu"
+        },
+        "-LEb5P3ypeKIX3owK9yF" : {
+          "icon-class" : "devicon-intellij-plain-wordmark colored",
+          "name" : "Intellij"
+        },
+        "-LEb5QQEROVhnLw5Re3S" : {
+          "icon-class" : "devicon-pycharm-plain-wordmark colored",
+          "name" : "Pycharm"
+        },
+        "-LEb5RPxGBd2X-M1K-Wr" : {
+          "icon-class" : "devicon-webstorm-plain-wordmark colored",
+          "name" : "Webstorm"
+        },
+        "-LEb5SlxEBq7uqlTY7RE" : {
+          "icon-class" : "devicon-chrome-plain-wordmark colored",
+          "name" : "Chrome"
+        },
+        "-LEb5UXsyumLRR6hnPK7" : {
+          "icon-class" : "devicon-gimp-plain colored",
+          "name" : "Gimp"
+        },
+        "-LEb5Vg_d1U81iBkLl8i" : {
+          "icon-class" : "devicon-inkscape-plain colored",
+          "name" : "Inkscape"
+        },
+        "-LEb5XlMvVovrA9UGn21" : {
+          "icon-class" : "devicon-heroku-plain-wordmark colored",
+          "name" : "Heroku"
+        }
+      },
+      "workflows" : {
+        "-LEb7gyZMtH4xPEHg5bS" : {
+          "title" : "Test Driven Development"
+        },
+        "-LEb8gfGD0FVeRnnz1qT" : {
+          "title" : "Collaborative Programming"
+        }
+      }
+    },
+    "social" : {
+      "-LEZkflhq0p-94YhMugz" : {
+        "name" : "facebook",
+        "url" : "https://facebook.com/argaghulamahmad"
+      },
+      "-LEZkuR-Wq_x5-p-Oxjf" : {
+        "name" : "twitter",
+        "url" : "https://twitter.com/ahmadghulamarga"
+      },
+      "-LEZkydppkJxaSBFy6Zc" : {
+        "name" : "instagram",
+        "url" : "https://instagram.com/argaghulamahmad"
+      },
+      "-LEZlCbvdqc_yUO07eja" : {
+        "name" : "linkedin",
+        "url" : "https://linkedin.com/in/argaghulamahmad"
+      },
+      "-LEZlGuj6PTcaugAecpk" : {
+        "name" : "github",
+        "url" : "https://github.com/argaghulamahmad"
+      },
+      "-LEZlLZzoAFeb20V47qQ" : {
+        "name" : "gitlab",
+        "url" : "https://gitlab.com/argaghulamahmad"
+      },
+      "-LEZlTkyY2CxfV4IaAu2" : {
+        "name" : "rss",
+        "url" : "http://blog.arga.ga/"
+      }
+    }
+  }
+}
