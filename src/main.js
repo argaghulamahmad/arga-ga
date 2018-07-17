@@ -19,10 +19,7 @@ axios.defaults.headers.get['Accepts'] = 'application/json';
 let config = {
   apiKey: "AIzaSyDKkCGqULqtZnbfeEWpZwp7xXbCKlH3xX0",
   authDomain: "arga-ga-backend.firebaseapp.com",
-  databaseURL: "https://arga-ga-backend.fire baseio.com",
   projectId: "arga-ga-backend",
-  storageBucket: "YOUR_PROJECT_ID.appspot.com",
-  messagingSenderId: "883924954020"
 };
 firebase.initializeApp(config);
 firebase.auth.Auth.Persistence.NONE;
@@ -37,4 +34,4 @@ new Vue({
   store,
   router,
   render: h => h(App)
-})
+});
