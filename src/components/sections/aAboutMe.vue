@@ -6,13 +6,15 @@
         <span class="text-primary">{{this.firstName}} {{this.lastName}}</span>
       </h1>
       <p class="mb-5">{{this.description}}</p>
-      <ul class="list-inline list-social-icons mb-0">
-        <li class="list-inline-item" v-for="social in socials">
-          <a :href="social['url']" target="_blank">
-            <i :class="getSocialIconClass(social['name'])"></i>
-          </a>
-        </li>
-      </ul>
+      <b-container>
+        <b-row>
+          <b-col v-for="social in socials">
+            <a :href="social['url']" target="_blank">
+              <i :class="getSocialIconClass(social['name'])"></i>
+            </a>
+          </b-col>
+        </b-row>
+      </b-container>
     </div>
     <aSpinner v-if="loading"></aSpinner>
   </section>
