@@ -1,15 +1,17 @@
 .spinner-wrapper {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   background-color: #36558F;
   z-index: 999999;
+  margin: auto;
 }
 
 .spinner {
-  margin: 200px auto 0;
+  margin: auto;
+  padding-top: 25%;
   width: 70px;
   text-align: center;
 }
