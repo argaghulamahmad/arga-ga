@@ -8,7 +8,7 @@
       <p class="mb-5">{{this.description}}</p>
       <b-container>
         <b-row>
-          <b-col v-for="social in socials">
+          <b-col v-for="social in socials" :key="social">
             <a :href="social['url']" target="_blank">
               <i :class="getSocialIconClass(social['name'])"></i>
             </a>
