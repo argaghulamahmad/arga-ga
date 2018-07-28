@@ -43,7 +43,7 @@
         "company" : "Fakultas Ilmu Komputer, Universitas Indonesia",
         "company-logo" : "https://media.licdn.com/dms/image/C4D0BAQE_PrK97K5Veg/company-logo_200_200/0?e=2130105600&v=beta&t=-E_JfVkgtpNfsoDh5DNrAF1MijddhvE6KsYqDbS66OI",
         "company-url" : "https://cs.ui.ac.id",
-        "description" : [ "Help lectures to teach students at Faculty of Computer Science University of Indonesia about foundation of programming, Java programming language, object-oriented programming, functional programming, algorithm, Git version control, Gradle build tool, jUnit, and Gitlab CI.", "I also create the tutorial guidance and mark students assignment in a group of fifteen students." ],
+        "description" : [ " Tutoring first semester students at Faculty of Computer Science University of Indonesia about foundation of programming, Java programming language, object-oriented programming, functional programming, algorithm, Git version control, Gradle build tool, jUnit, and Gitlab CI.", "Create the tutorial guidance and mark students assignment in a group of fifteen students." ],
         "from" : "Jan 2018",
         "location" : "Depok, Indonesia",
         "stacks" : [ "Java", "Gradle", "Git", "jUnit", "Gitlab" ],
@@ -54,7 +54,7 @@
         "company" : "Jojonomic Pte Ltd",
         "company-logo" : "https://media.licdn.com/dms/image/C4D0BAQFu7TX3cwfLkg/company-logo_200_200/0?e=2159024400&v=beta&t=9PiaIgqthfT1hNfoR_7TeKnoJ6e8mKRo4dt8Qihn8Ng",
         "company-url" : "https://jojonomic.com/",
-        "description" : [ "Rebuild jojonomic web-based application using Vue js." ],
+        "description" : [ "Working in base-dashboard project.", "Rebuild Jojonomic Pro web-based application using Vue.js.", "Create modular and reusable components used on all Jojonomic products.", "In the base-dashboard project, the components I made consist of side-bar, data table, floating prompt, multi-currency, summary block, notification screen, breadcrumb, progress-screen, single-file input, and multi-file input." ],
         "from" : "Jun 2018",
         "location" : "Jakarta, Indonesia",
         "stacks" : [ "Vue Js", "Node js", "JavaScript", "HTML", "CSS", "Sass", "Git" ],
@@ -75,7 +75,7 @@
     },
     "projects" : {
       "-LFAdQv7N4cjLCEckW4A" : {
-        "description" : [ "Role: Owner", "As a solo developer and designer, I fully built this app from scratch.", "A portfolio website fully built using Vue Js and designed to be responsive, maintainable and modular.", "This app has deployed to Heroku.", "Use Firebase as the backend, fetch the newest data automatically.", "Use Express js to serve dist JavaScript codes.", "Use Cloudflare to manage app's domain and improve web performance-security.", "Get a free domain from Freenom, and use it for this project.", "A side weekend project to improve my web development skills.", "Still in the development stage." ],
+        "description" : [ "Role: Owner", "As a solo developer and designer, I fully built this app from scratch.", "A portfolio website fully built using Vue Js and designed to be responsive, maintainable and modular.", "This app has deployed to Heroku.", "Use Firebase as the backend, fetch the newest data automatically.", "Use Express js to serve dist JavaScript codes.", "Use Cloudflare to manage app's domain and improve web performance-security.", "A side weekend project to improve my web development skills.", "Still in the development stage." ],
         "from" : "Jun 2018",
         "name" : "arga.ga - Arga Ghulam Ahmad's Personal Portofolio",
         "stacks" : [ "Vue Js", "Express Js", "Java Script", "HTML", "CSS", "Firebase", "Git", "Gitlab", "Heroku", "Cloudflare", "Freenom", "Node Js" ],
@@ -105,6 +105,14 @@
         "stacks" : [ "Python", "Django", "Java Script", "HTML", "CSS", "jQuery", "Git", "Gitlab", "Heroku" ],
         "to" : "Oct 2017",
         "url" : "https://gitlab.com/KelompokB10PPW2017/konekin"
+      },
+      "-LIV4IWeNEItTL1IwmW4" : {
+        "description" : [ "Role: Team Member", "Line messenger chatbot built for Compfest X Chatbot Invasion Competition. The purpose of this chatbot is to assist the user to raise a healthier life. Add this chatbot @uam8256e on Line messenger." ],
+        "from" : "Jun 2018",
+        "name" : "Pakan (Personal Health Assistant) – Line messenger chatbot",
+        "stacks" : [ "Python", "Flask", "Line SDK", "Firebase", "Redis", "Wit AI" ],
+        "to" : "Jul 2018",
+        "url" : ""
       }
     },
     "skills" : {
@@ -252,6 +260,12 @@
         "name" : "rss",
         "url" : "http://blog.arga.ga/"
       }
+    }
+  },
+  "messages" : {
+    "-LHRLKcNo_Ah52CS8FjG" : {
+      "level" : "Normal",
+      "message" : "Jago bat lu ga wkwkwkw"
     }
   }
 }
