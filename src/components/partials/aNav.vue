@@ -1,13 +1,13 @@
 <template>
   <bNavbar class="navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
     <bNavbarBrand>
-      <span class="d-block d-lg-none">Arga Ghulam Ahmad</span>
+      <span class="d-block d-lg-none" @click="togglerNavbar">Arga Ghulam Ahmad</span>
       <span class="d-none d-lg-block">
           <img class="img-fluid img-profile rounded-circle mx-auto mb-2"
                src="https://avatars3.githubusercontent.com/u/19942092?s=460&v=4" alt="">
         </span>
     </bNavbarBrand>
-    <bNavbarToggler type="button" data-toggle="collapse" target="navbarSupportedContent" data-target="#navbarSupportedContent"
+    <bNavbarToggler ref="toggler" type="button" data-toggle="collapse" target="navbarSupportedContent" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </bNavbarToggler>
@@ -67,6 +67,11 @@
     },
     components: {
       bNavbar, bNavbarCollapse, bNavbarToggler, bNavbarBrand
+    },
+    methods: {
+      togglerNavbar: function() {
+        this.$refs.toggler.$el.click()
+      }
     }
   }
 </script>
