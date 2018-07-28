@@ -45,7 +45,8 @@
   import bJumbotron from 'bootstrap-vue/es/components/jumbotron/jumbotron'
   import aContactMe from '../sections/aContactMe'
   import aSpinner from '../partials/aSpinner'
-  import firebase from 'firebase'
+  import firebase from 'firebase/app';
+  import 'firebase/auth';
   import {mapActions} from 'vuex'
   import {mapGetters} from 'vuex'
 

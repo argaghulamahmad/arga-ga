@@ -4,7 +4,8 @@ import VueRouter from 'vue-router'
 import axios from 'axios'
 import {routes} from './routes'
 import {store} from './store/store'
-import firebase from 'firebase'
+import firebase from 'firebase/app';
+import 'firebase/auth';
 import BootstrapVue from 'bootstrap-vue'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
@@ -21,6 +22,7 @@ let config = {
   authDomain: "arga-ga-backend.firebaseapp.com",
   projectId: "arga-ga-backend",
 };
+
 firebase.initializeApp(config);
 firebase.auth.Auth.Persistence.NONE;
 
