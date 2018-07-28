@@ -1,39 +1,37 @@
 <template>
   <div>
-    <b-navbar toggleable="md" type="light" variant="faded">
-      <b-navbar-brand v-if="user" tag="h1" class="mb-0">Contact Me</b-navbar-brand>
+    <section class="p-3 p-lg-5 d-flex flex-column" id="auth">
+      <div class="div--wrapper">
+        <b-jumbotron v-if="!user && !loading" bg-variant="white">
+          <template slot="header">
+            Contact Me
+          </template>
+          <template slot="lead">
+            Let me know you, please log in using your google account. To see my personal details such as phone number and
+            email, I need to know who you are.
+          </template>
+          <hr class="my-4">
+          <b-button size="sm" class="mx-auto my-2 my-sm-0" variant="primary" type="submit"
+                    @click="signInWithGoogle"><i
+            class="fa fa-google"></i> Sign in with Google
+          </b-button>
+        </b-jumbotron>
+      </div>
 
-      <!-- Right aligned nav items -->
-      <b-navbar-nav class="ml-auto">
-        <div v-if=user>
-          <b-button @click="signOut" variant="danger">Sign Out</b-button>
-        </div>
-      </b-navbar-nav>
-    </b-navbar>
+      <div v-if="user">
+        <b-container style="margin: 10px">
+          <b-row>
+            <b-col cols="8"><p class="p--title">Hello, {{this.getUserName()}}. It was pleasure to meet you.</p></b-col>
+            <b-col cols="4">
+              <b-button id="btn-logout" @click="signOut" variant="danger" size="sm">Sign Out</b-button>
+            </b-col>
+          </b-row>
+        </b-container>
+        <aContactMe></aContactMe>
+      </div>
 
-    <div class="div--wrapper">
-      <b-jumbotron v-if="!user && !loading" bg-variant="white">
-        <template slot="header">
-          Contact Me
-        </template>
-        <template slot="lead">
-          Let me know you, please log in using your google account. To see my personal details such as phone number and
-          email, I need to know who you are.
-        </template>
-        <hr class="my-4">
-        <b-button size="sm" class="mx-auto my-2 my-sm-0" variant="primary" type="submit"
-                  @click="signInWithGoogle"><i
-          class="fa fa-google"></i> Sign in with Google
-        </b-button>
-      </b-jumbotron>
-    </div>
-
-    <div v-if="user">
-      <p class="p--title">Hello, {{this.getUserName()}}. It was pleasure to meet you.</p>
-      <aContactMe></aContactMe>
-    </div>
-
-    <aSpinner v-if="loading"></aSpinner>
+      <aSpinner v-if="loading"></aSpinner>
+    </section>
   </div>
 </template>
 
@@ -47,8 +45,7 @@
   import aSpinner from '../partials/aSpinner'
   import firebase from 'firebase/app';
   import 'firebase/auth';
-  import {mapActions} from 'vuex'
-  import {mapGetters} from 'vuex'
+  import {mapActions, mapGetters} from 'vuex'
 
   export default {
     name: "aAuth",
