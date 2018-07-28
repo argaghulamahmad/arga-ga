@@ -18,8 +18,12 @@ span {
   margin-right: auto;
 }
 
-#toggleIcon {
-  padding-right: 5px;
+span {
+  margin: auto;
+
+  #toggleIcon {
+    padding-right: 5px;
+  }
 }
 
 @media only screen and (min-width: 992px) {
