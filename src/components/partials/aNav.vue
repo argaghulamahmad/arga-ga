@@ -1,6 +1,9 @@
 <template>
   <bNavbar class="navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
     <bNavbarBrand>
+      <span>
+        <i id="toggleIcon" :class="getDirectionIcon"></i>
+      </span>
       <span class="d-block d-lg-none" @click="togglerNavbar">Arga Ghulam Ahmad</span>
       <span class="d-none d-lg-block">
           <img class="img-fluid img-profile rounded-circle mx-auto mb-2"
@@ -65,12 +68,27 @@
       name: String,
       photoHrefUrl: String,
     },
+    data() {
+      return {
+        isExpand: false
+      }
+    },
     components: {
       bNavbar, bNavbarCollapse, bNavbarToggler, bNavbarBrand
     },
+    computed: {
+      getDirectionIcon() {
+        if (this.isExpand) {
+          return "fa fa-angle-up"
+        } else {
+          return "fa fa-angle-down"
+        }
+      }
+    },
     methods: {
       togglerNavbar: function() {
-        this.$refs.toggler.$el.click()
+        this.$refs.toggler.$el.click();
+        this.isExpand = !this.isExpand;
       }
     }
   }
